@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ts_1 = require("./ts");
+var ts_2 = require("./ts");
+var laptop = new ts_1.Product("laptop", 20000);
+var iphone = new ts_1.Product("iphone", 10000);
+var productManager = new ts_2.ProductManager();
+productManager.add = laptop;
+productManager.add = iphone;
+console.table(productManager.getAll);
